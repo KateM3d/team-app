@@ -22,6 +22,7 @@ export class AppComponent {
       this.errorMessage = 'Ooops! Something went wrong!';
       return;
     }
+    this.errorMessage = '';
     this.members.push(this.newMemberName);
     this.newMemberName = '';
     console.log(this.members);
