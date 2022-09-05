@@ -39,6 +39,14 @@
     &-input input {
         width: 50%;
     }
+    &-team {
+        margin-bottom: 1rem;
+    }
+    &-team ul {
+        border: 0.1rem solid rgba(128, 128, 128, 0.418);
+        margin: 0;
+        padding: 0.125rem;
+    }
 }
 
 h1 {
