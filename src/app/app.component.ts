@@ -10,6 +10,7 @@ export class AppComponent {
 
   newMemberName: string = '';
   members: string[] = [];
+  errorMessage = '';
 
   onInput(member: string) {
     this.newMemberName = member;
@@ -17,8 +18,12 @@ export class AppComponent {
   }
 
   addNewMember() {
+    if (!this.newMemberName) {
+      this.errorMessage = 'Ooops! Something went wrong!';
+      return;
+    }
     this.members.push(this.newMemberName);
-    console.log(this.members);
     this.newMemberName = '';
+    console.log(this.members);
   }
 }
